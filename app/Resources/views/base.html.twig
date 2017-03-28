@@ -2,12 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Test task{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Batmaid developer challenge{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="{{ asset('bundles/app/css/main.css') }}" rel="stylesheet">
+            <style>
+
+            </style>
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script
+                    src="https://code.jquery.com/jquery-3.2.1.min.js"
+                    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                    crossorigin="anonymous"></script>
+        {% endblock %}
     </body>
 </html>

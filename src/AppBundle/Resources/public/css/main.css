@@ -1,0 +1,10 @@
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+form #agent_decline > div > label {
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}

@@ -16,3 +16,4 @@
 /web/bundles/
 .idea/
 *.iml
+.php_cs.cache
