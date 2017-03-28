@@ -18,7 +18,10 @@ var agentDeclineFormValidation = {
                     if(data.status == 'failed') {
                         var message = data.message.join('<br/>');
                         agentDeclineFormValidation.showMessage('danger', message);
+                        return;
                     }
+
+                    alert('Unexpected error from server.');
                 }
             });
             e.preventDefault();
